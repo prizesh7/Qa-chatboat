@@ -1,0 +1,25 @@
+[project]
+name = "ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Yasvi Vamja", email = "yasvi-vamja@outlook.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "langchain>=1.4.2",
+    "langchain-groq>=1.1.3",
+    "langchain-openai>=1.6.4",
+    "langgraph>=1.2.12",
+    "python-dotenv>=1.2.3",
+    "streamlit>=1.64.0",
+]
+
+[project.scripts]
+ai = "ai:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
